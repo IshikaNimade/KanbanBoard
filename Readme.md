@@ -60,7 +60,7 @@ Build a modern and functional **Kanban Board** to demonstrate full-stack develop
 <img src="./frontend/src/assets/addTask.png" alt="login" width="800" />
 
 ### ✏️ Delete Task
-<img src="./frontend/src/assets/deleteTak.png" alt="login" width="800" />
+<img src="./frontend/src/assets/deleteTask.png" alt="login" width="800" />
 
 > 🔎 _All screenshots are from the live running app._
 
