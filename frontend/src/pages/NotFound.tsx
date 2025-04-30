@@ -17,7 +17,7 @@ const NotFound: React.FC = () => {
       <Typography variant="h1" color="primary">
         404
       </Typography>
-      <Typography variant="h5" color="ternery">
+      <Typography variant="h5" color="primary">
         Oops! Page not found.
       </Typography>
       <Button variant="contained" sx={{ mt: 3 }} onClick={() => navigate("/")}>
