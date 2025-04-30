@@ -20,10 +20,19 @@ export const KanbanProvider: React.FC<KanbanProviderProps> = ({ children }) => {
 
   const fetchBoard = async () => {
     setLoading(true);
-    const res = await getBoard();
-    setBoard(res);
-    setLoading(false);
+    try {
+      const res = await getBoard();
+      setBoard(res);
+    } catch (error) {
+      console.error("Failed to fetch board:", error);
+    } finally {
+      setLoading(false);
+    }
   };
+
+  useEffect(() => {
+    fetchBoard();
+  }, []);
 
   const handleAddColumn = async (title: string) => {
     await addColumn(title);
